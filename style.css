@@ -36,7 +36,7 @@ html, body {
 .form-container {
     flex: 5;
     flex-direction: column;
-    background-color: grey;
+    background-color: whitesmoke;
 }
 
 
@@ -69,7 +69,6 @@ html, body {
 }
 
 
-
 .form-part {
     display: flex;
 
@@ -93,7 +92,7 @@ html, body {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
+
 }
 
 .form-part fieldset {
@@ -103,9 +102,37 @@ html, body {
 
 
 
-
-.submit-and-login {
+.container-3 {
     height: 33.3%;
     width: auto;
-    background-color: grey;
+    background-color: whitesmoke;
+}
+
+
+.submit-and-login {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    margin-top: 70px;
+    margin-left: 100px;
+    width: 30%; 
+}
+
+.submit-and-login button {
+    padding: 15px; 
+    font-size: 17px;
+}
+
+.submit-and-login button:hover {
+    background-color: bisque;
+}
+
+.submit-and-login p {
+    font-size: larger;
+}
+
+.submit-and-login a {
+    color: green;
+    text-decoration: none;
 }

@@ -20,7 +20,7 @@
                 <span>Change your life now</span>
             </div>
             <div class="form-part">
-                <form action="example.com/path" method="post">
+                <form id = "myForm"action="/submit" method="post">
                     <fieldset>
                         <label for="first_name">First Name:</label>
                         <input type="text" id="first_name" name="first_name">
@@ -34,13 +34,21 @@
                         <input type="number" id="number" name="number">
                     </fieldset>    
                 </form>
-
-
             </div>
-            <div class="submit-and-login">
-                
+            <div class="container-3">
+                <div class="submit-and-login">
+                    <button type="submit" id="submitButton">Create Account</button>
+                    <p>Already have an account? <a href="the/login/page">Log in</a></p>   
+                </div>           
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function() {
+            var form = document.getElementById('myForm');
+            form.submit();
+        });
+    </script>
 </body>
 </html>
